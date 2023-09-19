@@ -1,0 +1,42 @@
+GAMS 25.1.3  r4e34d435fbd Released Oct 30, 2018 WEX-WEI x86 64bit/MS Windows - 09/18/23 15:42:47 Page 1
+G e n e r a l   A l g e b r a i c   M o d e l i n g   S y s t e m
+C o m p i l a t i o n
+
+
+      求解在固定正方形内，多个相同半径圆互不重叠时的最大半径
+   4   
+   5  * ---- 参数层 -----------------------------------------------------------------------------*
+   6   
+   7  Set
+   8      i   圆编号     /1*2/;
+   9   
+  10   
+  11  Scalar
+  12      side_len    正方形边长   /5/;
+  13   
+  14   
+  15  * ---- 变量层 -----------------------------------------------------------------------------*
+  16   
+  17  Positive Variable
+  18      x(i)    圆 i 的横坐标
+  19      y(i)    圆 i 的纵坐标;
+  20   
+  21  * ---- 模型层 -----------------------------------------------------------------------------*
+  22   
+
+
+COMPILATION TIME     =        0.000 SECONDS      3 MB  25.1.3 r4e34d435fbd WEX-WEI
+
+
+EXECUTION TIME       =        0.000 SECONDS      3 MB  25.1.3 r4e34d435fbd WEX-WEI
+
+
+USER: CS 635 Spring 2014                             G140121/0001AO-GEN
+      Prof. Michael Ferris, University of Wisconsin-Madison      DC2937
+      License for teaching and research at degree granting institutions
+
+
+**** FILE SUMMARY
+
+Input      F:\GitHub\GAMS-tutorial\maximize_radius_in_a_square.gms
+Output     F:\GitHub\GAMS-tutorial\maximize_radius_in_a_square.lst
